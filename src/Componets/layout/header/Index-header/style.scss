@@ -1,0 +1,81 @@
+@import "../../../../common";
+
+.index-header {
+  background: url("../../../../assets/imgs/banner-bg/indexImage-full.jpg") center no-repeat;
+  max-height: 670px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-family: 'Overpass', sans-serif;
+  @media screen and (max-width: 1199px){
+    background: url("../../../../assets/imgs/banner-bg/indexImage-desktop.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  @media screen and (max-width: 991px){
+    background: url("../../../../assets/imgs/banner-bg/indexImage-tablet.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  @media screen and (max-width: 767px){
+    background: url("../../../../assets/imgs/banner-bg/indexImage-mobile.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  .main-index {
+    padding: 135px 0;
+    @media screen and (max-width: 767px){
+      padding: 75px 0;
+    }
+    .index-title {
+      font-size: 50px;
+      font-weight: 600;
+      color: #ffffff;
+      line-height: 55px;
+      @media screen and (max-width: 991px){
+        font-size: 42px;
+      }
+      @media screen and (max-width: 767px){
+       text-align: center;
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+
+    .index-description {
+      font-size: 20px;
+      color: #ffffff;
+      margin: 30px 0;
+      @media screen and (max-width: 991px){
+        font-size: 18px;
+      }
+      @media screen and (max-width: 767px){
+        text-align: center;
+        font-size: 16px;
+        max-height: 75px;
+        overflow: hidden;
+      }
+    }
+
+    .index-btn {
+      min-height: 40px;
+      width: 290px;
+      background: #ef6c00;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      @media screen and (max-width: 767px){
+        margin: 0 auto;
+      }
+      a {
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
