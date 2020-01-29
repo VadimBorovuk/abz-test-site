@@ -3,11 +3,16 @@ import axios from 'axios';
 
 import Header from "./layout/header/header";
 import AboutMe from "./sectoins/AboutMe/AboutMe";
+import Skills from "./sectoins/Skills/Skills";
+
+
 import Users from "./sectoins/Users/Users";
+import Form from "./sectoins/Form/Form";
 import Footer from "./layout/footer/footer";
 
 import '../App.css';
-import Form from "./sectoins/Form/Form";
+import Task from "./sectoins/Task/Task";
+
 
 class App extends React.Component{
     componentDidMount() {
@@ -23,7 +28,9 @@ class App extends React.Component{
             <div className="main-content">
                 <Header/>
                 <AboutMe/>
-                <Form/>
+                <Skills/>
+                <Task/>
+                {/*<Form/>*/}
                 {/*<Users {...this.props}/>*/}
                 {/*<Footer/>*/}
             </div>

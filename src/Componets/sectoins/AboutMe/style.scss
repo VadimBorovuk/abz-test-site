@@ -1,8 +1,11 @@
+@import "../../../common";
+
 .about {
   font-family: 'Source Sans Pro', sans-serif;
 
   .about-content {
-    padding: 140px 0 70px;
+    padding: 140px 0 35px;
+    width: 100%;
     @media screen and (max-width: 767px){
       padding: 70px 0 0;
     }
@@ -26,6 +29,8 @@
 
       .about-image {
         width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
         img {
           width: 100%;
         }
@@ -46,10 +51,10 @@
         }
         .about-info-description{
           font-size: 16px;
-          color: #4c4b4b;
+          color: $text-description;
         }
         .about-info-btn{
-          color: #ef6c00;
+          color: $colorSelect;
           font-weight: bold;
           font-size: 22px;
           margin-top: 20px;

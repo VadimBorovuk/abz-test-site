@@ -1,0 +1,89 @@
+@import "../../../common";
+
+.task {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: url("../../../assets/imgs/third-block-bg/task-image-full.jpg") center no-repeat;
+  min-height: 670px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  @media screen and (max-width: 991px) {
+    padding: 0;
+  }
+
+  .task-content {
+    padding: 115px 0 70px;
+    width: 100%;
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
+
+    .about-title {
+      font-size: 42px;
+      font-family: 'Overpass', sans-serif;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      color: #ffffff;
+      @media screen and (max-width: 991px) {
+        letter-spacing: 2px;
+      }
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+        padding-top: 50px;
+        line-height: initial;
+      }
+    }
+
+    .task-block {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 60px;
+      align-items: center;
+      @media screen and (max-width: 767px) {
+        padding-top: 20px;
+      }
+      .block-text{
+        color: #ffffff;
+        font-size: 16px;
+        padding-right: 76px;
+        @media screen and (max-width: 991px){
+          padding-right: 0;
+        }
+      }
+      .block-image{
+        img{
+          height: 100%;
+          width: 100%;
+          @media screen and (max-width: 767px){
+            max-width: 260px;
+            margin: 20px auto;
+          }
+        }
+        .image-desktop{
+          display: block;
+          @media screen and (max-width: 991px){
+            display: none;
+          }
+        }
+        .image-tablet{
+          display: none;
+          @media screen and (max-width: 991px){
+            display: block;
+          }
+        }
+      }
+      @media screen and (max-width: 767px){
+        padding-top: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        .order-1{
+          order: 2;
+        }
+        .order-2{
+          order: 1;
+        }
+      }
+    }
+  }
+}

@@ -30,16 +30,16 @@ class Navbar extends React.Component {
                             </div>
                             <ul className="navbar__links">
                                 <li className="navbar__link">
-                                    <a href="#">About me</a>
+                                    <a href="#about">About me</a>
                                 </li>
                                 <li className="navbar__link">
-                                    <a href="#">Relationships</a>
+                                    <a href="#relationships">Relationships</a>
                                 </li>
                                 <li className="navbar__link">
-                                    <a href="#">Requirements</a>
+                                    <a href="#requirements">Requirements</a>
                                 </li>
                                 <li className="navbar__link">
-                                    <a href="#">Users</a>
+                                    <a href="#users">Users</a>
                                 </li>
                                 <li className="navbar__link">
                                     <a href="#">Sign Up</a>
