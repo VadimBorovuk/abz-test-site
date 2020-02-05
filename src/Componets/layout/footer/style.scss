@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Overpass:600&display=swap');
+@import "../../../common";
+
+.footer {
+  background: #283593;
+  padding: 10px 0 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  .footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 30px;
+    border-bottom: 1px solid $text-description;
+
+    .footer-logo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      img {
+        max-width: 135px;
+        filter: invert(1);
+      }
+
+      .footer-links {
+        padding-left: 0;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        margin: 0;
+
+        .footer-link {
+          margin-right: 20px;
+
+          a {
+            color: #ffffff;
+            font-size: 16px;
+            text-decoration: none;
+
+          }
+        }
+      }
+    }
+  }
+
+  .footer-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    .footer-contacts {
+      .contacts-item {
+        margin-bottom: 15px;
+        color: #ffffff;
+        img {
+          margin-right: 20px;
+          &:hover{
+            cursor: pointer;
+            filter: invert(41%) sepia(70%) saturate(2135%) hue-rotate(7deg) brightness(100%) contrast(101%);
+          }
+        }
+
+        .contacts-email {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .footer-news {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer-col-news{
+        padding-left: 0;
+        list-style-type: none;
+        margin-left: 80px;
+        .col-item-news{
+          color: #ffffff;
+          font-size: 16px;
+          text-align: right;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .footer-description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    .footer-email{
+      color: #ffffff;
+      font-size: 12px;
+    }
+    .footer-icons{
+      img{
+        margin-left: 15px;
+        transition: all .4s;
+        &:hover{
+          cursor: pointer;
+          filter: invert(41%) sepia(70%) saturate(2135%) hue-rotate(7deg) brightness(100%) contrast(101%);
+        }
+      }
+    }
+  }
+}

@@ -8,7 +8,7 @@ import Skills from "./sectoins/Skills/Skills";
 
 import Users from "./sectoins/Users/Users";
 import Form from "./sectoins/Form/Form";
-import Footer from "./layout/footer/footer";
+import Footer from "./layout/footer/Footer";
 
 import '../App.css';
 import Task from "./sectoins/Task/Task";
@@ -30,9 +30,9 @@ class App extends React.Component{
                 <AboutMe/>
                 <Skills/>
                 <Task/>
-                {/*<Form/>*/}
-                {/*<Users {...this.props}/>*/}
-                {/*<Footer/>*/}
+                <Users {...this.props}/>
+                <Form/>
+                <Footer/>
             </div>
         )
     }

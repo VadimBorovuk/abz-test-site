@@ -1,0 +1,188 @@
+@import "../../../common";
+
+.form {
+  font-family: 'Source Sans Pro', sans-serif;
+  min-height: 600px;
+
+  .form-content {
+    padding: 35px 0 70px;
+    width: 100%;
+    @media screen and (max-width: 991px) {
+
+    }
+
+    .about-title {
+      font-size: 42px;
+      font-family: 'Overpass', sans-serif;
+      font-weight: bold;
+      text-align: center;
+      color: #000;
+      @media screen and (max-width: 767px) {
+        font-size: 30px;
+      }
+    }
+
+    .about-description {
+      font-size: 18px;
+      text-align: center;
+      @media screen and (max-width: 767px) {
+        padding: 0 60px;
+      }
+    }
+
+    .form-block {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 40px;
+
+      .select-option, .select-block {
+        margin-top: 20px;
+      }
+
+      .select-block {
+        .select-description {
+          font-size: 12px;
+          color: $text-description;
+          padding-left: 20px;
+        }
+      }
+
+      .select-block {
+        .select-field {
+          height: 55px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 5px;
+          border: 1px solid $text-description;
+          padding: 10px 0 10px 20px;
+
+          .select-file {
+            font-size: 20px;
+            border: 2px solid $colorSelect;
+            height: 55px;
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+              color: $colorSelect;
+              text-decoration: none;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .form-fields {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-between;
+      margin-bottom: 200px;
+
+      .form-field {
+        position: relative;
+
+        input {
+          width: 100%;
+          margin: 0 auto;
+          border-radius: 5px;
+          border: 1px solid $text-description;
+          height: 55px;
+          padding: 10px 0 10px 20px;
+          outline: none;
+        }
+
+        .upper-text {
+          position: absolute;
+          height: 20px;
+          text-align: center;
+          width: 50px;
+          background: #ffffff;
+          color: #000000;
+          font-size: 16px;
+          top: -13px;
+          left: 30px;
+        }
+      }
+
+      .select-option {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 55px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid $text-description;
+
+        .select-text {
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 20px;
+        }
+
+        .select-menu {
+          display: none;
+          position: absolute;
+          top: 52px;
+          border: 1px solid #000;
+          height: auto;
+          padding: 5px 20px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          border-top: 0;
+          left: -1px;
+          width: calc(100% + 2px);
+
+          .menu-item {
+            padding: 8px 0;
+          }
+        }
+      }
+
+      .select-option.on {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 0;
+
+        .select-text {
+          img {
+            transform: rotate(-180deg);
+            transition: all .4s;
+          }
+        }
+
+        .select-menu {
+          display: block;
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+    .submit {
+      text-align: center;
+
+      .btn-submit {
+        width: 290px;
+        height: 40px;
+        color: $colorSelect;
+        font-size: 20px;
+        border-radius: 4px;
+        border: 3px solid $colorSelect;
+        background-color: #ffffff;
+        font-weight: bold;
+        transition: all .4s;
+
+        &:hover {
+          box-shadow: 0 5px 5px 5px #f3f3f3;
+        }
+      }
+    }
+  }
+}

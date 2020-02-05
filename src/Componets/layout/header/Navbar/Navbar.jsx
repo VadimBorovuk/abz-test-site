@@ -44,6 +44,9 @@ class Navbar extends React.Component {
                                 <li className="navbar__link">
                                     <a href="#">Sign Up</a>
                                 </li>
+                                <li className="navbar__link">
+                                    <a href="#">Weather</a>
+                                </li>
                             </ul>
                             <div className="navbar__contacts">
                                 <div className="navbar__contacts__info">
@@ -93,6 +96,9 @@ class Navbar extends React.Component {
                         </li>
                         <li className="drop__link">
                             <a href="#">Sign Out</a>
+                        </li>
+                        <li className="drop__link">
+                            <a href="#">Weather</a>
                         </li>
                     </ul>
                 </div>

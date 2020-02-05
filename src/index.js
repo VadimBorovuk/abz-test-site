@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import './common.scss';
 
+
 import mainStore from './store';
 
 const store = mainStore();
