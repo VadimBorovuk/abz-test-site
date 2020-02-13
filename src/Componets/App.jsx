@@ -10,11 +10,19 @@ import Users from "./sectoins/Users/Users";
 import Form from "./sectoins/Form/Form";
 import Footer from "./layout/footer/Footer";
 
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+
+
 import '../App.css';
 import Task from "./sectoins/Task/Task";
+import Weather from "./layout/Weather/Weather";
 
 
-class App extends React.Component{
+class App extends React.Component {
     componentDidMount() {
         const {getUsers} = this.props;
         axios.get('https://frontend-test-assignment-api.abz.agency/api/v1/users')
@@ -24,16 +32,23 @@ class App extends React.Component{
     }
 
     render() {
-        return(
-            <div className="main-content">
-                <Header/>
-                <AboutMe/>
-                <Skills/>
-                <Task/>
-                <Users {...this.props}/>
-                <Form/>
-                <Footer/>
-            </div>
+        return (
+            <Router>
+                <Switch>
+                    <div className="main-content">
+                        <Header/>
+                        <Route path='/weather'>
+                            <Weather/>
+                        </Route>
+                        <AboutMe/>
+                        <Skills/>
+                        <Task/>
+                        <Users {...this.props}/>
+                        <Form/>
+                        <Footer/>
+                    </div>
+                </Switch>
+            </Router>
         )
     }
 }

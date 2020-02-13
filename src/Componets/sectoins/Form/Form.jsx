@@ -47,7 +47,7 @@ class Form extends Component {
         const isOn = this.state.isActive;
         const ArrSelect = this.state.selectValue;
         return (
-            <div className="form" id="form">
+            <div className="form" id="signUp">
                 <div className="container">
                     <div className="row">
                         <div className="form-content">

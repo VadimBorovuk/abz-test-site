@@ -6,6 +6,7 @@ import signOut from '../../../../assets/icons/sign-out.svg';
 import burger from '../../../../assets/icons/line-menu.svg';
 
 import './style.scss';
+import {Link} from "react-router-dom";
 
 
 class Navbar extends React.Component {
@@ -26,26 +27,28 @@ class Navbar extends React.Component {
                     <div className="row">
                         <div className="navbar">
                             <div className="navbar__logo">
-                                <img src={logo} alt=""/>
+                                <a href="/">
+                                    <img src={logo} alt=""/>
+                                </a>
                             </div>
                             <ul className="navbar__links">
                                 <li className="navbar__link">
-                                    <a href="#about">About me</a>
+                                    <a href="/#about">About me</a>
                                 </li>
                                 <li className="navbar__link">
-                                    <a href="#relationships">Relationships</a>
+                                    <a href="/#relationships">Relationships</a>
                                 </li>
                                 <li className="navbar__link">
-                                    <a href="#requirements">Requirements</a>
+                                    <a href="/#requirements">Requirements</a>
                                 </li>
                                 <li className="navbar__link">
-                                    <a href="#users">Users</a>
+                                    <a href="/#users">Users</a>
                                 </li>
                                 <li className="navbar__link">
-                                    <a href="#">Sign Up</a>
+                                    <a href="/#signUp">Sign Up</a>
                                 </li>
                                 <li className="navbar__link">
-                                    <a href="#">Weather</a>
+                                    <Link to="/weather">Weather</Link>
                                 </li>
                             </ul>
                             <div className="navbar__contacts">
@@ -60,14 +63,14 @@ class Navbar extends React.Component {
                                     <img className="logout" src={signOut}/>
                                 </a>
                             </div>
-                            <a className={isOn? "navbar-burger on" : "navbar-burger"}
+                            <a className={isOn ? "navbar-burger on" : "navbar-burger"}
                                onClick={() => this.setState({isActive: !isOn})}>
                                 <img src={burger} alt=""/>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div className={isOn ? "drop-menu on": "drop-menu"}>
+                <div className={isOn ? "drop-menu on" : "drop-menu"}>
                     <div className="drop-contact">
                         <a href="#" className="drop__contacts-logo">
                             <img className="user-logo" src={user} alt=""/>
@@ -98,7 +101,7 @@ class Navbar extends React.Component {
                             <a href="#">Sign Out</a>
                         </li>
                         <li className="drop__link">
-                            <a href="#">Weather</a>
+                            <Link to="/weather">Weather</Link>
                         </li>
                     </ul>
                 </div>

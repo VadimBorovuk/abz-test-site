@@ -1,0 +1,101 @@
+
+#weather {
+  background: linear-gradient(to left, #47a2ff, #2b52ba);
+
+  .show-info {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    .show-info-block {
+      background: url('../../../assets/imgs/weather-body.jpg') center center no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      padding: 80px 0;
+      width: 900px;
+      border: 4px solid #fff;
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, .5);
+      text-align: center;
+      min-height: 550px;
+
+      .main-title {
+        p {
+          font-size: 60px;
+          line-height: 90px;
+          font-weight: bold;
+          color: rgba(255, 255, 255, .3);
+          background-image: url('../../../assets/imgs/wave.png');
+          -webkit-background-clip: text;
+          background-position: 100% 40%;
+          text-transform: uppercase;
+          animation: wave 10s infinite;
+        }
+      }
+
+      @keyframes wave {
+        from {
+          background-position: left 0 top 40%;
+        }
+        to {
+          background-position: left 600px top 40%;
+        }
+      }
+
+      .main-text {
+        font-size: 24px;
+        font-style: italic;
+        line-height: 32px;
+        color: aqua;
+      }
+
+      .form-weather {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .city-field {
+          min-height: 40px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          border: 0;
+          padding: 5px 40px 5px 20px;
+        }
+
+        .btn-send {
+          min-height: 40px;
+          background: #ef6c00;
+          font-weight: bold;
+          border: 0;
+          color: #ffffff;
+          font-size: 18px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+
+      .weather-info {
+        .block-info {
+          margin-top: 40px;
+
+          p {
+            margin: 10px;
+            color: #ffffff;
+            font-size: 18px;
+
+            span {
+              font-weight: bold;
+              color: #67ffb7;
+            }
+          }
+        }
+
+        .field-error {
+          color: red;
+          font-size: 16px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
