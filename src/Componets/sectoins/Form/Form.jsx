@@ -63,36 +63,22 @@ class Form extends Component {
                             <div className="form-block">
                                 <form onSubmit={this.handleSubmit}>
                                     <div className="form-fields">
-                                        <div className="col-4 form-field">
+                                        <div className="col-12 col-md-4 form-field">
                                             <input value={this.state.valueName} onChange={this.handleNameChange}
                                                    type="text" placeholder="Your name"/>
                                             <span className="upper-text">Name</span>
                                         </div>
-                                        <div className="col-4 form-field">
+                                        <div className="col-12 col-md-4 form-field">
                                             <input value={this.state.valueAge} onChange={this.handleAgeChange}
                                                    type="text" placeholder="Your email"/>
                                             <span className="upper-text">Email</span>
                                         </div>
-                                        <div className="col-4 form-field">
+                                        <div className="col-12 col-md-4 form-field">
                                             <input value={this.state.valuePhone} onChange={this.handlePhoneChange}
                                                    type="text" placeholder="Your phone"/>
                                             <span className="upper-text">Phone</span>
                                         </div>
-                                        <div className="col-6">
-                                            <div  className={isOn? "select-option on" : "select-option"}
-                                                 onClick={() => this.setState({isActive: !isOn})}>
-                                                <div className="select-text">
-                                                    <span>Select your position</span>
-                                                    <img src={caretDown} alt=""/>
-                                                </div>
-                                                <div className="select-menu">
-                                                    {ArrSelect.map(item=>{
-                                                        return  <div className="menu-item">{item.value}</div>
-                                                    })}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-6">
+                                        <div className="col-12 col-md-6">
                                             <div className="select-block">
                                                 <div className="select-field">
                                                     <div className="select-text">
@@ -107,11 +93,25 @@ class Form extends Component {
                                                 </div>
                                             </div>
                                         </div>
+                                        <div className="col-12 col-md-6">
+                                            <div className={isOn ? "select-option on" : "select-option"}
+                                                 onClick={() => this.setState({isActive: !isOn})}>
+                                                <div className="select-text">
+                                                    <span>Select your position</span>
+                                                    <img src={caretDown} alt=""/>
+                                                </div>
+                                                <div className="select-menu">
+                                                    {ArrSelect.map(item => {
+                                                        return <div className="menu-item">{item.value}</div>
+                                                    })}
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
                             <div className="col-12 submit">
-                                <input className="btn-submit" type="submit" value="Send"/>
+                                <button className="btn-submit" type="submit">Send</button>
                             </div>
                         </div>
                     </div>

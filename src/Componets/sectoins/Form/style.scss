@@ -2,7 +2,6 @@
 
 .form {
   font-family: 'Source Sans Pro', sans-serif;
-  min-height: 600px;
 
   .form-content {
     padding: 35px 0 70px;
@@ -65,7 +64,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
             a {
               color: $colorSelect;
               text-decoration: none;
@@ -81,11 +81,13 @@
       flex-wrap: wrap;
       align-items: stretch;
       justify-content: space-between;
-      margin-bottom: 200px;
+      margin-bottom: 20px;
 
       .form-field {
         position: relative;
-
+        @media screen and (max-width: 767px){
+          margin-bottom: 20px;
+        }
         input {
           width: 100%;
           margin: 0 auto;
@@ -128,6 +130,8 @@
         }
 
         .select-menu {
+          background: #fff;
+          z-index: 1;
           display: none;
           position: absolute;
           top: 52px;

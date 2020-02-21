@@ -13,12 +13,18 @@
     align-items: center;
     padding: 20px 0 30px;
     border-bottom: 1px solid $text-description;
+    @media screen and (max-width: 767px){
+      padding: 10px 0;
+    }
 
     .footer-logo {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
+      @media screen and (max-width: 767px){
+        flex-direction: column;
+      }
 
       img {
         max-width: 135px;
@@ -31,9 +37,14 @@
         list-style-type: none;
         justify-content: space-between;
         margin: 0;
+        @media screen and (max-width: 767px){
+        flex-direction: column;
+          text-align: center;
+          margin: 20px;
+      }
 
         .footer-link {
-          margin-right: 20px;
+          margin-left: 20px;
 
           a {
             color: #ffffff;
@@ -53,6 +64,10 @@
     align-items: center;
     padding: 20px 0;
     .footer-contacts {
+      @media screen and (max-width: 767px){
+        width: 100%;
+        text-align: center;
+      }
       .contacts-item {
         margin-bottom: 15px;
         color: #ffffff;
@@ -61,6 +76,9 @@
           &:hover{
             cursor: pointer;
             filter: invert(41%) sepia(70%) saturate(2135%) hue-rotate(7deg) brightness(100%) contrast(101%);
+          }
+          @media screen and (max-width: 991px){
+            display: none;
           }
         }
 
@@ -74,10 +92,16 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media screen and (max-width: 767px){
+        display: none;
+      }
       .footer-col-news{
         padding-left: 0;
         list-style-type: none;
         margin-left: 80px;
+        @media screen and (max-width: 991px){
+          margin-left: 45px;
+        }
         .col-item-news{
           color: #ffffff;
           font-size: 16px;
@@ -96,8 +120,15 @@
     .footer-email{
       color: #ffffff;
       font-size: 12px;
+      @media screen and (max-width: 767px){
+        display: none;
+      }
     }
     .footer-icons{
+      @media screen and (max-width: 767px){
+        width: 100%;
+        text-align: center;
+      }
       img{
         margin-left: 15px;
         transition: all .4s;

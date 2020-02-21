@@ -17,6 +17,9 @@ class Navbar extends React.Component {
         }
     }
 
+    handleClick = ()=>{
+
+    }
 
     render() {
         const isOn = this.state.isActive;
@@ -83,19 +86,19 @@ class Navbar extends React.Component {
                     <div className="drop-line"></div>
                     <ul className="drop__links">
                         <li className="drop__link">
-                            <a href="#">About me</a>
+                            <a href="/#about">About me</a>
                         </li>
                         <li className="drop__link">
-                            <a href="#">Relationships</a>
+                            <a href="/#relationships">Relationships</a>
                         </li>
                         <li className="drop__link">
-                            <a href="#">Requirements</a>
+                            <a href="/#requirements">Requirements</a>
                         </li>
                         <li className="drop__link">
-                            <a href="#">Users</a>
+                            <a href="/#users">Users</a>
                         </li>
                         <li className="drop__link">
-                            <a href="#">Sign Up</a>
+                            <a href="/#signUp">Sign Up</a>
                         </li>
                         <li className="drop__link">
                             <a href="#">Sign Out</a>

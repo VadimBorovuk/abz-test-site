@@ -65,8 +65,12 @@
           .user-name{
             font-family: 'Overpass', sans-serif;
             font-size: 22px;
-
+            overflow: hidden;
+            max-width: 170px;
             color: #000000;
+            @media screen and (max-width: 991px){
+              margin: 0 auto;
+            }
           }
           .user-position,
           .user-phone{
