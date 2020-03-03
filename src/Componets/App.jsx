@@ -20,6 +20,7 @@ import {
 import '../App.css';
 import Task from "./sectoins/Task/Task";
 import Weather from "./layout/Weather/Weather";
+import Titles from "./layout/Titles/Titles";
 
 
 class App extends React.Component {
@@ -45,6 +46,7 @@ class App extends React.Component {
                         <Task/>
                         <Users {...this.props}/>
                         <Form/>
+                        {/*<Titles/>*/}
                         <Footer/>
                     </div>
                 </Switch>
